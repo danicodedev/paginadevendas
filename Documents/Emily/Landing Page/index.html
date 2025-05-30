@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+<style>
+    .testimonials-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonials-track img {
+  flex-shrink: 0;
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto; /* Centraliza os depoimentos */
+  padding-right: 15px;
+}
+
+.control {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.control.prev {
+  left: 10px;
+}
+
+.control.next {
+  right: 10px;
+}
+
+@media (max-width: 992px) {
+  .testimonials-track img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-track img {
+    width: 250px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials-track img {
+    width: 200px;
+    height: 100px;
+  }
+}
+</style>
+
+</head>
+<body>
+    <div class="black-friday-banner">
+        <div class="container">
+          <div class="banner-content">
+            <p class="banner-text bebas-neue-bold">ESSA OFERTA EXCLUSIVA ACABA EM:</p>
+            <div class="countdown bebas-neue-bold">
+              <span class="countdown-time" id="countdown-hours">10</span>h
+              <span class="countdown-time" id="countdown-minutes">09</span>min
+              <span class="countdown-time" id="countdown-seconds">36</span>sec
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '548258927792024'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=548258927792024&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+      <header>
+
+        <div class="container text-center" >
+            <h1  style="margin-top: 30px;">MÉTODO PASSO-A-PASSO DO CURRÍCULO À ENTREVISTA: 
+                COMO <strong style="color: #bd00ff;">CONSEGUIR</strong> <span style="text-decoration: underline; text-decoration-color: red;  text-underline-offset: 3px;">SEU EMPREGO!</span>(GARANTIDO)</h1>
+            
+            <div class="video-container" style="margin-top: 30px;margin: 30px auto;">
+                
+                <iframe src="https://www.youtube.com/embed/wu8ZiDMq2zE?controls=0&" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           
+            </div>
+
+            <p style="max-width: 520px; margin: 0 auto; margin-top: 30px;">Saia do zero, mesmo que ainda não tenha currículo até a sua primeira entrevista e o seu tão sonhado emprego!</p>
+            <a href="#preco" class="custom-button pulse">
+                LIBERAR MEU ACESSO
+                <span class="icon">↗</span>
+              </a>
+              
+        </div>
+      </header>
+      <section class="container text-center " style="border-bottom: 1px solid #EDEDED;">
+        <h1 class="mt">Quanto vale nunca mais ficar sem <strong style="color: #6b46c1; ">emprego na vida?</strong> </h1>
+        <p>Não estamos falando de empregos temporários ou contratos curtos – mas de construir uma estabilidade que ninguém pode tirar de você.</p>
+        <ul>
+            <li>😇 Não se preocupar com entrevistas</li>
+            <li>😌 Conseguir as melhores vagas</li>
+            <li>⭐ Sair sempre na frente</li>
+        </ul>
+        <h1 class="mt" style="
+        background: black;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+        border-radius: 8px;">
+            ISSO TUDO COM UM MÉTODO QUE VAI TE AJUDAR A CONSEGUIR EMPREGOS <strong style="color: #6b46c1; ">(SEMPRE QUE QUISER).</strong>
+        </h1>
+      </section>
+      <section style="background-color: #6b46c1;">
+        <h1 class="" style="color: #EDEDED; padding-top: 40px;">Simples, prático e direto ao ponto</h1>
+        <div class="container box-container">
+            <div class="box">
+                <h2>Evolução completa de curriculo</h2>
+                <p>Aprenda a montar um currículo irresistível que chama a atenção dos recrutadores na primeira olhada.</p>
+            </div>
+            <div class="box">
+                <h2>Busca e conquista de emprego</h2>
+                <p>Saiba exatamente o que fazer para sair da procura e conquistar o emprego que você merece.</p>
+            </div>
+            <div class="box">
+                
+                <h2>Vença qualquer entrevista</h2>
+                <p>Aprenda a transformar nervosismo em confiança e a deixar uma marca em entrevistas.</p>
+            </div>
+            
+        </div>
+        <div class="container" style="display: flex; justify-content: center;">
+        <a href="#preco" class="custom-button pulse" style="
+        background-color: white;
+        color: black;
+    ">
+            LIBERAR MEU ACESSO
+            <span class="icon">↗</span>
+          </a>
+        </div>
+      </section>
+
+    <section class="container">
+        <h1 class="mt"> Para quem é indicado?</h1>
+        <div class="indication-section">
+            <div class="indication-container">
+              <div class="indication-box">
+                <div class="icon success">✔️</div>
+                <h2>Indicamos:</h2>
+                <ul>
+                    <li>Se você não sabe como montar um currículo que se destaque.</li>
+                    <li>Se você quer aprender a se preparar para entrevistas de emprego.</li>
+                    <li>Se você busca entrar ou se recolocar no mercado de trabalho.</li>
+                    <li>Se você sente dificuldade em organizar suas experiências profissionais.</li>
+                    <li>Se você quer conquistar uma vaga na sua área de interesse.</li>
+                    <li>Se você deseja aprender a negociar salário e benefícios.</li>
+                    <li>Se você precisa de estratégias para buscar e aplicar para vagas de forma eficiente.</li>
+                </ul>
+              </div>
+              <div class="indication-box">
+                <div class="icon error">❌</div>
+                <h2>Não Indicamos:</h2>
+                <ul>
+                    <li>Se você não está disposto a aplicar o que aprender.</li>
+                    <li>Se você acredita que apenas enviar currículos é suficiente para ser contratado.</li>
+                    <li>Se você não quer melhorar suas habilidades de comunicação em entrevistas.</li>
+                    <li>Se você prefere continuar sem estratégias para buscar emprego.</li>
+                    <li>Se você não está interessado em se destacar no mercado de trabalho.</li>
+                    <li>Se você não quer desenvolver um plano de carreira para o futuro.</li>
+                    <li>Se você não está disposto a dedicar tempo para aprender algo novo.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="container" style="display: flex; justify-content: center;">
+                <a href="#preco" class="custom-button pulse">
+                    LIBERAR MEU ACESSO
+                    <span class="icon">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section  style="background-color: #6b46c1;">
+        <div class="container">
+            <h1 class="mt" style="color:white; margin-bottom: 20px;">DEPOIMENTOS</h1>
+            
+            <div class="testimonials-container" style="margin-bottom: 30px;">
+                <button class="control prev">&lt;</button>
+                <div class="testimonials-wrapper">
+                  <div class="testimonials-track">
+                    <img src="https://i0.wp.com/emilydosreis.com/wp-content/uploads/2024/03/feedback2.fw_.png?fit=400%2C200&ssl=1" alt="Depoimento 1">
+                    <img src="https://i0.wp.com/emilydosreis.com/wp-content/uploads/2024/03/feedback1.fw_.png?fit=400%2C200&ssl=1" alt="Depoimento 2">
+                    <img src="https://i0.wp.com/emilydosreis.com/wp-content/uploads/2024/03/feedback5.fw_.png?fit=400%2C200&ssl=1" alt="Depoimento 3">
+                    <img src="https://i0.wp.com/emilydosreis.com/wp-content/uploads/2024/03/feedback6.fw_.png?fit=400%2C200&ssl=1" alt="Depoimento 4">
+                    <img src="https://i0.wp.com/emilydosreis.com/wp-content/uploads/2024/03/feedback3.fw_.png?fit=400%2C200&ssl=1" alt="Depoimento 4">
+                    <img src="https://i0.wp.com/emilydosreis.com/wp-content/uploads/2024/03/feedback4.fw_.png?fit=400%2C200&ssl=1" alt="Depoimento 4">
+                  </div>
+                </div>
+                <button class="control next">&gt;</button>
+              </div>
+        </div>
+    </section>
+
+    <section class="container" style="border-bottom: 1px solid #EDEDED;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div>
+                <img style="max-width: 300px;" src="https://devdeponta.com/wp-content/uploads/2022/11/selo-7dias-roxo.png" alt="">
+            </div>
+            <div>
+                <h1 >Garantia <strong style="color: #6b46c1; ">incondicional</strong></h1>
+                <p style="text-align: center;">Durante 7 dias a partir da compra, você poderá consumir todo conteúdo que quiser.</p>
+                <p style="text-align: center;">Se dentro desse período você se arrepender da compra, basta pedir o reembolso que devolveremos cada centavo, sem ressentimentos.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="border-bottom: 1px solid #EDEDED;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <h1 style="margin-bottom: 20px;">E você ainda tem acesso a um <strong style="color: #6b46c1; ">Certificado</strong></h1>
+            <div class="" style="text-align: center;">
+                <img style="max-width: 90%;" src="images/certificado.png" alt="">
+            </div>
+            <div>
+                
+                <p style="text-align: center;">Libere o seu certificado ao fim do treinamento para demonstrar que você se preparou.</p>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="preco">
+        <h1 > 🎁 Garanta o seu acesso agora:</h1>
+        <div class="pricing-card-container">
+            <div class="pricing-card">
+              <h2 class="pricing-title">ACESSO VITALÍCIO</h2>
+              <p class="pricing-note">Atenção: vagas limitadas!</p>
+              <ul class="pricing-features">
+                <li>- Garantia de 7 dias</li>
+                <li>- Atualizações e novos conteúdos</li>
+                <li>- Acompanhamento para dúvidas</li>
+              </ul>
+              <div class="pricing-price">
+                <p style="text-decoration: line-through;">de R$197,00 por:</p>
+                <h3 style="
+                font-size: 38px;">5x de R$5,89</h3>
+                <p style="
+                margin: 0;">ou R$26,97 à vista</p>
+              </div>
+              <a href="https://pay.kiwify.com.br/5xK24Pl" target="_blank" class="custom-button pulse" style="
+              background-color: green; margin: 0px;">
+                LIBERAR MEU ACESSO
+                <span class="icon">↗</span>
+            </a>
+              <img style="
+              background: white;
+              border-radius: 29px;
+              padding: 9px;
+              width: 80%;
+          " src="images/pagamentos.png" alt="Payment Methods" class="payment-methods">
+            </div>
+          </div>
+          <p style="text-align: center; margin-top: 40px; font-size: 12px;">⚠️ Atenção esse é um valor promocional de lançamento após isso o valor irá subir, as aulas de alguns módulos estão em andamento e serão liberadas em breve, aproveite o valor promocional hoje!</p>
+    </section>
+
+
+
+
+</body>
+
+<script>
+
+const track = document.querySelector('.testimonials-track');
+const prevButton = document.querySelector('.control.prev');
+const nextButton = document.querySelector('.control.next');
+const testimonials = document.querySelectorAll('.testimonials-track img');
+let index = 0;
+
+// Atualiza o carrossel para centralizar os depoimentos
+function updateCarousel() {
+  const testimonialWidth = testimonials[index].clientWidth;
+  const offset = (track.clientWidth - testimonialWidth) / 2;
+  track.style.transform = `translateX(calc(-${index * testimonialWidth}px + ${offset}px))`;
+}
+
+// Avança automaticamente
+function autoSlide() {
+  index = (index + 1) % testimonials.length;
+  updateCarousel();
+}
+
+let autoSlideInterval = setInterval(autoSlide, 3000);
+
+// Botão de voltar
+prevButton.addEventListener('click', () => {
+  index = (index - 1 + testimonials.length) % testimonials.length;
+  updateCarousel();
+  resetInterval();
+});
+
+// Botão de avançar
+nextButton.addEventListener('click', () => {
+  index = (index + 1) % testimonials.length;
+  updateCarousel();
+  resetInterval();
+});
+
+// Reinicia o intervalo ao interagir
+function resetInterval() {
+  clearInterval(autoSlideInterval);
+  autoSlideInterval = setInterval(autoSlide, 3000);
+}
+
+// Ajusta o carrossel ao carregar e redimensionar a tela
+window.addEventListener('load', updateCarousel);
+window.addEventListener('resize', updateCarousel);
+
+
+
+
+
+        const countdownHours = document.getElementById('countdown-hours');
+    const countdownMinutes = document.getElementById('countdown-minutes');
+    const countdownSeconds = document.getElementById('countdown-seconds');
+
+    let timeRemaining = 900; // 15 minutes in seconds
+
+    function updateCountdown() {
+    const hours = Math.floor(timeRemaining / 3600);
+    const minutes = Math.floor((timeRemaining % 3600) / 60);
+    const seconds = timeRemaining % 60;
+
+    countdownHours.textContent = hours.toString().padStart(2, '0');
+    countdownMinutes.textContent = minutes.toString().padStart(2, '0');
+    countdownSeconds.textContent = seconds.toString().padStart(2, '0');
+
+    timeRemaining--;
+
+    if (timeRemaining < 0) {
+        clearInterval(countdownInterval);
+        // Exibir a mensagem que a pessoa pode aproveitar a promoção ainda
+    }
+    }
+
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</html>
